@@ -58,14 +58,39 @@ const users = [
 // console.log(users[2].email);
 
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); // return datatype as an array with keys of an object
-console.log(Object.values(tinderUser)); // return dataype as an array with values of an object
-console.log(Object.entries(tinderUser)); // return an array of array with key and values 
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); // return datatype as an array with keys of an object
+// console.log(Object.values(tinderUser)); // return dataype as an array with values of an object
+// console.log(Object.entries(tinderUser)); // return an array of array with key and values 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // Determines whether an object has a property with the specified name.
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // Determines whether an object has a property with the specified name.
+
+//*************************Desctructuring ******************************************
 
 
+const course = {
+    coursename: "JS in Hindi",
+    coursePrice : "999",
+    courseInstructor : "Hitesh"
+}
+
+console.log(course.courseInstructor);
+
+const {courseInstructor : instructor} = course // this is called disctructuring
+// console.log(courseInstructor);
+console.log(instructor);
+
+// {
+//     "coursename": "js in hindi",
+//     "price" : "free",
+//     "instructor" : "hitesh"
+// }  this is called json
+
+[
+    {},
+    {},
+    {}
+]
 
 
 
